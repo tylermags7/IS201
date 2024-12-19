@@ -1,0 +1,103 @@
+
+body {
+    background-color: #f4f4f4; /* Light gray color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+img {
+    border: 2px solid white;
+    padding: 4px;
+    width: 100%;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10px;
+}
+
+.center-container iframe {
+    width: 560px;
+    height: 315px;
+}
+
+.centerme {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.common {
+    position: absolute;
+}
+
+.footer {
+    z-index: 1;
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.82);
+}
+
+.header {
+    top: 0;
+}
+
+.mainbody {
+    top: 400px;
+}
+
+.common.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.common.header h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    display: inline-block;
+    border: 3px solid #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.centerme ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.centerme li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.centerme li::before {
+    content: counter(list-item) ". ";
+}
+
+.centerme li::after {
+    content: " IN";
+}
+
+.sub-title {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
